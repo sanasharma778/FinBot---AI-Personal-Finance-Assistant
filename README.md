@@ -1,1 +1,1 @@
-# chatbot-blueprint
+# FinBot
