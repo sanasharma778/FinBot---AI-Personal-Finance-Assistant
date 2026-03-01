@@ -1,14 +1,14 @@
 # frontend/streamlit_app.py
-# This is the UI of our chatbot — everything the user sees and interacts with
+# This is the UI of our chatbot. everything the user sees and interacts with.
 
 import streamlit as st
 import sys
 import os
 
-# This tells Python where to find our app folder
+# To find the app folder
 sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 
-# Import our own files
+# Import our files
 from app.chatbot import get_model, get_chat_response
 from app.prompts import SYSTEM_PROMPTS
 
@@ -27,7 +27,7 @@ with st.sidebar:
     
     st.divider()
     
-    # Mode selector — this switches the system prompt
+    # Mode selector (switch the system prompt)
     st.subheader("Choose Your Mode")
     selected_mode = st.selectbox(
         "What do you need help with?",
@@ -36,7 +36,7 @@ with st.sidebar:
     
     st.divider()
     
-    # Show what each mode does
+    # Functionality of each prompt
     st.caption("💰 Budget Advisor — plan your monthly budget")
     st.caption("📈 Investment Basics — learn about investing")
     st.caption("🏦 Saving Goals — set and reach saving targets")
