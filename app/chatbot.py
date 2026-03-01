@@ -6,11 +6,11 @@ from dotenv import load_dotenv
 from langchain_groq import ChatGroq
 from langchain_core.messages import HumanMessage, AIMessage, SystemMessage
 
-# This line reads the .env file and loads our API key
+# Reads the .env file and loads API key
 load_dotenv()
 
 def get_model():
-    """This function creates and returns our AI model"""
+    """This function creates and returns AI model"""
     return ChatGroq(
         api_key=os.getenv("GROQ_API_KEY"),
         model_name="llama-3.1-8b-instant"
