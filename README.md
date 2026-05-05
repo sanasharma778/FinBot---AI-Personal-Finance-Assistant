@@ -9,7 +9,7 @@
 > built with LangChain, Groq and Streamlit.
 
 ##  Live Demo
-[Coming soon — deploying this week]
+Going to deploy on hugging face as soon as the proper demo gets ready
 
 ##  What Problem Does This Solve?
 Personal finance is overwhelming! especially for young adults navigating budgeting, saving and investing for the first 
@@ -88,8 +88,7 @@ environment variables.
 
 ##  What's Next
 - Adding a RAG pipeline so FinBot can answer from uploaded financial 
-documents
-- Integrating real-time UK interest rate and ISA allowance data
+documents(Need to research and gather papers)
 - Adding a spending tracker with visual charts
 
 ##  Disclaimer
